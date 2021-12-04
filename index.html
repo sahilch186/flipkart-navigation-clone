@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="aseets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Main Navigation -->
+        <div class="navbar">
+            <div class="nav-wrapper d-flex align-items-center justify-content-between">
+                <div class="right d-flex align-items-center">
+                    <!-- Mobile Nav Toggler -->
+                    <button class="mobile-nav-toggler"><span class="material-icons">menu</span></button>
+                    <!-- Brand Logo -->
+                    <div class="nav-brand">
+                        <a href="#"><img src="aseets/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- Search Bar -->
+                <div class="search-bar flex-grow-1">
+                    <form action="#" class="shadow d-flex align-items-center">
+                        <input type="text" class="search-input" id="search"
+                            placeholder="Search for Products, Brands and More" autocomplete="off">
+                        <button class="btn-search" type="submit">
+                            <span class="material-icons">search</span>
+                        </button>
+                    </form>
+                    <!-- Search List on Focus -->
+                    <ul class="search-list unstyle-list shadow">
+                        <!-- Search History Item -->
+                        <li class="search-item">
+                            <a href="#" class="search-link d-flex align-items-center">
+                                <span class="material-icons">history</span>
+                                <span>Product Name</span>
+                            </a>
+                        </li>
+                        <!-- Suggested Item -->
+                        <li class="search-item">
+                            <a href="#" class="search-link d-flex align-items-center">
+                                <span class="material-icons">search</span>
+                                <span>Product Name</span>
+                            </a>
+                        </li>
+                        <!-- Item with Category -->
+                        <li class="search-item">
+                            <a href="#" class="search-link d-flex align-items-center">
+                                <span><img src="aseets/img/dummy-cat.jpeg" alt=""></span>
+                                <span>Product Name <small>in Category Name</small></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="menu-list unstyle-list d-flex align-items-center">
+                    <li class="menu-item has-dropdown">
+                        <a href="#" class="menu-link btn-menu">Login</a>
+                        <div class="dropdown">
+                            <ul class="menu-list unstyle-list">
+                                <li class="menu-item d-flex align-items-center justify-content-between">
+                                    <h4>New Customer ?</h4>
+                                    <a href="#" class="menu-link">Signup</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link d-flex align-items-center">
+                                        <span class="material-icons">account_circle</span>
+                                        <span>My Profile</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link d-flex align-items-center">
+                                        <span class="material-icons">inventory_2</span>
+                                        <span>My Orders</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link d-flex align-items-center">
+                                        <span class="material-icons">favorite</span>
+                                        <span>My Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link d-flex align-items-center">
+                                        <span class="material-icons">local_activity</span>
+                                        <span>My Rewards</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link d-flex align-items-center">
+                                        <span class="material-icons">card_giftcard</span>
+                                        <span>Gift Cards</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link d-flex align-items-center"><span
+                                class="material-icons">shopping_cart</span> <span class="cart-text">Cart</span></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link btn-mobile-search"><span class="material-icons">search</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Mobile Search Bar -->
+            <div class="mobile-search">
+                <div class="mobile-search-bar">
+                    <form action="#" class="d-flex align-items-center">
+                        <button type="button" class="btn-back"><span class="material-icons">arrow_back</span></button>
+                        <input type="text" class="search-input flex-grow-1" name="search"
+                            placeholder="Search for Products, Brands and More" autocomplete="off">
+                        <button type="button" class="btn-reset"><span class="material-icons">cancel</span></button>
+                    </form>
+                    <ul class="mobile search-list unstyle-list shadow">
+                        <!-- Search History Item -->
+                        <li class="search-item">
+                            <a href="#" class="search-link d-flex align-items-center">
+                                <span class="material-icons">history</span>
+                                <span>Product Name</span>
+                            </a>
+                        </li>
+                        <!-- Suggested Item -->
+                        <li class="search-item">
+                            <a href="#" class="search-link d-flex align-items-center">
+                                <span class="material-icons">search</span>
+                                <span>Product Name</span>
+                            </a>
+                        </li>
+                        <!-- Item with Category -->
+                        <li class="search-item">
+                            <a href="#" class="search-link d-flex align-items-center">
+                                <span><img src="aseets/img/dummy-cat.jpeg" alt=""></span>
+                                <span>Product Name <small>in Category Name</small></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="discover">
+                    <h5>Discover More</h5>
+                    <ul class="tags unstyle-list d-flex align-items-center flex-wrap">
+                        <li><a href="#">mobiles</a></li>
+                        <li><a href="#">chargers</a></li>
+                        <li><a href="#">t-shirts</a></li>
+                        <li><a href="#">pants</a></li>
+                        <li><a href="#">shorts</a></li>
+                        <li><a href="#">watches</a></li>
+                        <li><a href="#">tv</a></li>
+                        <li><a href="#">headphones</a></li>
+                        <li><a href="#">bluetooths</a></li>
+                        <li><a href="#">fridge</a></li>
+                        <li><a href="#">micro-ovens</a></li>
+                        <li><a href="#">dress</a></li>
+                        <li><a href="#">sunglasses</a></li>
+                        <li><a href="#">footwears</a></li>
+                        <li><a href="#">jwelleries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-nav">
+                <div class="sidebar">
+                    <div class="header d-flex align-items-center justify-content-between">
+                        <a href="#" class="user d-flex align-items-center">
+                            <span class="material-icons">account_circle</span>
+                            <span>Login or Signup</span>
+                        </a>
+                        <button class="btn-close"><span class="material-icons">close</span></button>
+                    </div>
+                    <div class="menu custom-scroll">
+                        <ul class="menu-list unstyle-list">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span class="material-icons">widgets</span>
+                                    <span>Categories</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span class="material-icons">more</span>
+                                    <span>More on Flipkart</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-list unstyle-list">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span class="material-icons">inventory_2</span>
+                                    <span>My Orders</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span class="material-icons">favorite</span>
+                                    <span>My Wishlist</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span class="material-icons">local_activity</span>
+                                    <span>My Rewards</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span class="material-icons">card_giftcard</span>
+                                    <span>Gift Cards</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-list unstyle-list">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span class="material-icons">translate</span>
+                                    <span>Change Language</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-list unstyle-list">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span>Notification Prefrences</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span>Help Centre</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link d-flex align-items-center">
+                                    <span>Legal</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mega-nav shadow">
+            <ul class="nav-list unstyle-list d-flex align-items-center justify-content-around">
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link d-flex align-items-center">Mobiles <span class="material-icons">expand_more</span></a>
+                    <div class="mega-nav-l1">
+                        <ul class="unstyle-list">
+                            <li class="nav-item-inner has-dropdown">
+                                <a href="#" class="nav-link-inner d-flex align-items-center justify-content-between">Featured Phone <span class="material-icons">navigate_next</span></a>
+                                <div class="mega-nav-l2">
+                                    <ul class="unstyle-list">
+                                        <li class="nav-item-inner"><a href="#">Featured Phone 1</a></li>
+                                        <li class="nav-item-inner"><a href="#">Featured Phone 2</a></li>
+                                        <li class="nav-item-inner"><a href="#">Featured Phone 3</a></li>
+                                        <li class="nav-item-inner"><a href="#">Featured Phone 4</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item-inner has-dropdown">
+                                <a href="#" class="nav-link-inner d-flex align-items-center justify-content-between">Smart Phone <span class="material-icons">navigate_next</span></a>
+                                <div class="mega-nav-l2">
+                                    <ul class="unstyle-list">
+                                        <li class="nav-item-inner"><a href="#">Smart Phone 1</a></li>
+                                        <li class="nav-item-inner"><a href="#">Smart Phone 2</a></li>
+                                        <li class="nav-item-inner"><a href="#">Smart Phone 3</a></li>
+                                        <li class="nav-item-inner"><a href="#">Smart Phone 4</a></li>
+                                        <li class="nav-item-inner"><a href="#">Smart Phone 5</a></li>
+                                        <li class="nav-item-inner"><a href="#">Smart Phone 6</a></li>
+                                        <li class="nav-item-inner"><a href="#">Smart Phone 7</a></li>
+                                        <li class="nav-item-inner"><a href="#">Smart Phone 8</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item-inner"><a href="#" class="nav-link-inner">Tele-Phone</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link has-dropdown d-flex align-items-center">Electronics <span class="material-icons">expand_more</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link has-dropdown d-flex align-items-center">TV & Applince <span class="material-icons">expand_more</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link has-dropdown d-flex align-items-center">Sports, Books and More <span class="material-icons">expand_more</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link has-dropdown d-flex align-items-center">Home and Furniture <span class="material-icons">expand_more</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link has-dropdown d-flex align-items-center">Men <span class="material-icons">expand_more</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link has-dropdown d-flex align-items-center">Women <span class="material-icons">expand_more</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link has-dropdown d-flex align-items-center">Baby <span class="material-icons">expand_more</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Flights</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Offers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="aseets/js/jquery-3.6.0.min.js"></script>
+    <script src="aseets/js/script.js"></script>
+</body>
+
+</html>
